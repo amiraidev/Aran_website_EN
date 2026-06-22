@@ -1,0 +1,240 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>آران | آموزگار زبان انگلیسی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Custom Cursor ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ===== Particle Background ===== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-ring">
+      <span class="loader-text">ARAN</span>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">ARAN<small>ENGLISH</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-item">درباره</a>
+      <a href="#skills" class="nav-item">تخصص‌ها</a>
+      <a href="#courses" class="nav-item">دوره‌ها</a>
+      <a href="#stats" class="nav-item">آمار</a>
+      <a href="#contact" class="nav-item cta">رزرو کلاس</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="منو">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-pre reveal">یادگیری زبان، آسان‌تر از همیشه</p>
+      <h1 class="hero-title">
+        <span class="line reveal">آران</span>
+        <span class="line accent reveal">آموزگار زبان انگلیسی</span>
+      </h1>
+      <p class="hero-sub reveal">
+        با روش‌های نوین و کاربردی، انگلیسی را نه فقط یاد بگیر، بلکه زندگی کن.
+        از مکالمه روزمره تا آمادگی آزمون‌های بین‌المللی — هر قدم با اطمینان.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#courses" class="btn btn-primary">مشاهده دوره‌ها</a>
+        <a href="#contact" class="btn btn-ghost">رزرو جلسه رایگان</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>اسکرول کنید</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-index">۰۱</span>
+      <h2 class="section-title">درباره آران</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <div class="portrait-frame">
+          <div class="portrait-inner">
+            <span class="portrait-initial">A</span>
+          </div>
+          <div class="frame-corner tl"></div>
+          <div class="frame-corner tr"></div>
+          <div class="frame-corner bl"></div>
+          <div class="frame-corner br"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="reveal">
+          آران یک <strong>مدرس زبان انگلیسی</strong> با بیش از ده سال تجربه در
+          تدریس مکالمه، گرامر و آمادگی برای آزمون‌های IELTS و TOEFL است. او
+          باور دارد که یادگیری زبان باید لذت‌بخش، کاربردی و متناسب با هر زبان‌آموز باشد.
+        </p>
+        <p class="reveal">
+          با تمرکز بر مهارت‌های واقعی مکالمه و استفاده از متدهای روز دنیا،
+          آران به صدها زبان‌آموز کمک کرده تا با اعتمادبه‌نفس انگلیسی صحبت کنند
+          و به اهداف تحصیلی و شغلی‌شان برسند.
+        </p>
+        <ul class="about-tags reveal">
+          <li>مکالمه روزمره</li>
+          <li>آمادگی IELTS</li>
+          <li>گرامر کاربردی</li>
+          <li>انگلیسی تجاری</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-index">۰۲</span>
+      <h2 class="section-title">تخصص‌ها</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill" data-skill="96">
+        <div class="skill-top"><span>مکالمه (Speaking)</span><span class="skill-val">۹۶٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="93">
+        <div class="skill-top"><span>آمادگی IELTS / TOEFL</span><span class="skill-val">۹۳٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="90">
+        <div class="skill-top"><span>گرامر و ساختار</span><span class="skill-val">۹۰٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="92">
+        <div class="skill-top"><span>تلفظ و لهجه</span><span class="skill-val">۹۲٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="88">
+        <div class="skill-top"><span>دایره لغات (Vocabulary)</span><span class="skill-val">۸۸٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+      <div class="skill" data-skill="85">
+        <div class="skill-top"><span>انگلیسی تجاری</span><span class="skill-val">۸۵٪</span></div>
+        <div class="skill-bar"><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Courses ===== -->
+  <section class="courses" id="courses">
+    <div class="section-head">
+      <span class="section-index">۰۳</span>
+      <h2 class="section-title">دوره‌ها</h2>
+    </div>
+    <div class="courses-grid">
+      <article class="course-card reveal">
+        <div class="course-icon">💬</div>
+        <h3>مکالمه روزمره</h3>
+        <p>تمرکز روی مکالمه واقعی و روان شدن در موقعیت‌های روزمره زندگی.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+      <article class="course-card reveal">
+        <div class="course-icon">🎓</div>
+        <h3>آمادگی IELTS</h3>
+        <p>برنامه فشرده و هدفمند برای کسب نمره بالا در آزمون آیلتس.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+      <article class="course-card reveal">
+        <div class="course-icon">📖</div>
+        <h3>گرامر کاربردی</h3>
+        <p>یادگیری گرامر به‌صورت ساده و کاربردی، بدون حفظ کردن قوانین خشک.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+      <article class="course-card reveal">
+        <div class="course-icon">💼</div>
+        <h3>انگلیسی تجاری</h3>
+        <p>مهارت‌های ارتباط حرفه‌ای، ایمیل‌نویسی و مذاکره به زبان انگلیسی.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+      <article class="course-card reveal">
+        <div class="course-icon">🗣️</div>
+        <h3>تلفظ و لهجه</h3>
+        <p>اصلاح تلفظ و کار روی لهجه برای صحبت طبیعی و شفاف.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+      <article class="course-card reveal">
+        <div class="course-icon">🧒</div>
+        <h3>انگلیسی کودکان</h3>
+        <p>آموزش بازی‌محور و جذاب برای علاقه‌مند کردن کودکان به زبان.</p>
+        <button class="course-btn">جزئیات دوره</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Stats ===== -->
+  <section class="stats" id="stats">
+    <div class="stats-grid">
+      <div class="stat reveal"><span class="stat-num" data-target="620">0</span><span class="stat-label">زبان‌آموز موفق</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="11">0</span><span class="stat-label">سال تجربه تدریس</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="40">0</span><span class="stat-label">دوره برگزارشده</span></div>
+      <div class="stat reveal"><span class="stat-num" data-target="97">0</span><span class="stat-label">درصد رضایت</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="section-head center">
+      <span class="section-index">۰۴</span>
+      <h2 class="section-title">رزرو کلاس</h2>
+    </div>
+    <p class="contact-lead reveal">
+      آماده‌ای سفر یادگیری‌ات رو شروع کنی؟ همین حالا یک جلسه مشاوره رایگان رزرو کن.
+    </p>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <input type="text" id="name" required placeholder=" " />
+        <label for="name">نام شما</label>
+      </div>
+      <div class="field">
+        <input type="email" id="email" required placeholder=" " />
+        <label for="email">ایمیل</label>
+      </div>
+      <div class="field full">
+        <textarea id="msg" rows="4" required placeholder=" "></textarea>
+        <label for="msg">پیام شما</label>
+      </div>
+      <button type="submit" class="btn btn-primary full">ارسال درخواست</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-logo">ARAN<small>ENGLISH</small></div>
+    <div class="socials">
+      <a href="#" aria-label="instagram">IG</a>
+      <a href="#" aria-label="telegram">TG</a>
+      <a href="#" aria-label="youtube">YT</a>
+    </div>
+    <p class="copyright">© ۲۰۲۶ آران — تمام حقوق محفوظ است.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
